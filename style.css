@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ @font-face {
+        font-family: "Courier New", "Monaco", "monospace";
+        src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+             url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+      }
+
+
+
+.form{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New';
+  }
+
+
+body {
+    padding:0;
+    margin: 0;
+    background-color: #ffe84b
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #331;
+    border-radius: 5px;
+    width: 50vw;
+    background-color: whitesmoke;
+    box-shadow: 0 0 15px;
+ 
+}
+
+.container-flex-login input {
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.container-flex-login input[type="submit"] {
+    width: 120px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border:none;
+    color: whitesmoke;
+    background-color: rgb(37,180,86);
+    cursor: pointer;
+}
+
+.container-flex-login {
+    flex:1 0 60%;
+    background-color #f9b233;
+    color: blue;
+    padding: 30px 15px;
+}
+
+.container-flex-login h2 {
+    text-align: center;
+}
+
+.conteiner-flex-info {
+    display: flex;
+    flex: 5 1 100%;
+    background-color: rgb(24, 139, 233);
+    padding-top: 40px;
+    width: 600;
+    max-width:600px;
+    border-radius: 0px;
+}
+
+.conteiner-flex-info li {
+    list-style: none;
+    padding: 6px 0;
+}
+
+.conteiner-flex-info a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media(max-width: 900px) {
+    .container-flex {
+        flex-direction: column;
+    }
+}
+
+
+.login_logo{
+    width: 100;
+    max-width:200px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.login_icons{
+    display:flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login_icons img{
+    width: 200px;
+
+}
+
+.icons__button{
+  
+    display: inline-block;
+    align-items: baseline ;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+.login__title{
+    color: var(--blue);
+    font-size: 1.5em;
+}
+
+.login__label{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input{
+ width: 100%;
+ background-color: var(--light-grey);
+ border: none;
+ border-radius: 5px;
+ outline: none;
+ font-size: 0.9em;
+ padding: 25 px 10 px 10px;
+ font-weight: 600;
+
+}
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h{
+    background-color: #ffd400;
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #2c685b;
+    padding: 30px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .2s;
+}
+
+#menu-h ul li a:hover {
+    background-color: whitesmoke;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    
+    background-color:blue;
+    color: wheat;
+}

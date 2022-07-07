@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Paulo Victor">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <form>
+        <div class="d-flex">
+
+            <div class="container-flex">
+
+                <div class="container-flex-login">
+
+                    <form class="form" th:action="@{/login}" method="post">
+
+                        <h2>Faça o login</h2>
+
+                        <div class="container-flex-login-item">
+
+                            <h5>Usuário:</h5>
+
+                            <input type="text" name="usuario" placeholder="Digite seu Usuário" required>
+
+                        </div>
+
+
+
+                        <div class="container-flex-login-item">
+
+                            <h5>Senha:</h5>
+
+                            <input type="password" name="senha" placeholder="Digite sua Senha" required>
+
+                        </div>
+
+
+                        <div class="container-flex-action">
+
+                            <input type="submit" value="Entrar">
+
+
+                            <p class="title" style="text-align:center"><br> Copyright© 2022 Paulo Victor </p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <div class="conteiner-flex-info">
+
+                    <ul>
+
+                        <img src="logo.jpg" class="login_logo">
+
+                        <div class="login__icons">
+                            <button type="button" class="icons__button">
+                                <a href="https://www.facebook.com/docgauthenticpet/"  target="_blank" rel="noopener noreferrer">
+                                    <img src="facebook-icon.png" alt="facebook">
+                                </a>
+                            </button>
+
+                            <button type="button" class="icons__button">
+                                <a href="https://www.instagram.com/petshop.caopeao/"  target="_blank" rel="noopener noreferrer">
+                                <img src="instagram-icon.png" alt="instagram">
+                            </a>
+                            </button>
+
+                            <button type="button" class="icons__button">
+                                <a href="https://www.google.com/maps/dir/-15.857181,-48.0109383/PetShop+C%C3%A3oPe%C3%A3o/@-15.8642941,-48.0149561,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x935a2d856aa9cf77:0x39377f21b51816b5!2m2!1d-48.0143151!2d-15.8716137/"  target="_blank" rel="noopener noreferrer">
+                                <img src="google-icon.png" alt="google">
+                            </a>
+                            </button>
+                        </div>
+
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
